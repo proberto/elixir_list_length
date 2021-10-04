@@ -3,7 +3,7 @@ defmodule ElixirListLength do
 
   defp length([], acc), do: acc
 
-  defp length([head | tail], acc) do
+  defp length([_head | tail], acc) do
     acc = acc + 1
     length(tail, acc)
   end
